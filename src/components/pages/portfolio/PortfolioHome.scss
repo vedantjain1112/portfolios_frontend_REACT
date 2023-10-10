@@ -1,0 +1,13 @@
+.portMob{
+    display: none;
+}
+
+
+@media(max-width:600px){
+    .portbig{
+        display: none;
+    }
+    .portMob{
+        display: block;
+    }
+}
