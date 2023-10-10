@@ -1,0 +1,13 @@
+.servicesm{
+    display: none;
+}
+
+
+@media(max-width:600px){
+    .class{
+        display: none;
+    }
+    .servicesm{
+        display: block;
+    }
+}

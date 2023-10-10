@@ -1,0 +1,98 @@
+.verywellMainclass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .wrapper {
+    position: relative;
+  }
+  .box {
+    padding: 15px;
+    cursor: pointer;
+    border: 3px dotted red;
+    border-radius: 7px;
+    position: relative;
+  }
+  .box a {
+    font-size: 30px;
+    padding: 17px;
+    color: #fff;
+  }
+  .box:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #353131;
+    transition: 0.5s ease-in-out;
+  }
+  .box:after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+    content: "Hello 👋";
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 5px;
+  }
+  .box a:hover {
+    background: #353131;
+    color: red;
+  }
+  .box:hover:before,
+  .box:hover:after {
+    top: -100%;
+  }
+  
+  .box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .box a {
+    text-align: center;
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .box {
+      flex-direction: column;
+    }
+  
+    .box a {
+      padding: 10px;
+    }
+  
+    .box .text {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center;
+    }
+  
+    .box .text.vertical {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+    }
+  
+    .box::after {
+      font-size: 9px;
+      margin: 0 0 0 4px;
+    }
+  }
+  

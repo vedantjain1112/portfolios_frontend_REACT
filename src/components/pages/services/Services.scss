@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+.containeerContainingClass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    border: 3px dotted red;
+    background-color: #353131;
+    margin: 40px;
+    border-radius: 8px;
+}
+
+
+.containeerContainingClass {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.containeerContainingClass .cardingCARD {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.containeerContainingClass .cardingCARD:hover {
+    height: 400px;
+}
+
+.containeerContainingClass .cardingCARD .ImaageBox {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.phtwo{
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+    width: fit-content;
+    background-color: #353131;
+    border: 3px dotted red;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.containeerContainingClass .cardingCARD:hover .ImaageBox {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.containeerContainingClass .cardingCARD .ImaageBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containeerContainingClass .cardingCARD .contentWritten {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.containeerContainingClass .cardingCARD:hover .contentWritten {
+    top: 130px;
+    height: 250px;
+}
+
+.containeerContainingClass .cardingCARD .contentWritten h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.containeerContainingClass .cardingCARD .contentWritten p {
+    color: #333;
+}
+
+.containeerContainingClass .cardingCARD .contentWritten a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: var(--clr);
+    color: white;
+    font-weight: 500;
+}
+
+.containeerContainingClass .cardingCARD .contentWritten a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+    .containeerContainingClass .cardingCARD {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .containeerContainingClass .cardingCARD .ImaageBox {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .containeerContainingClass .cardingCARD .contentWritten p {
+        font-size: 0.8rem;
+    }
+
+    .containeerContainingClass .cardingCARD .contentWritten a {
+        font-size: 0.9rem;
+    }
+}
