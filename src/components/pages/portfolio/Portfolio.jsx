@@ -25,7 +25,7 @@ function Portfolio() {
   return (
     <>
       <Navbar />
-      <h2 className="phtwo">Projects Done by Me</h2>
+      <h2 className="phtwoo">Projects Done by Me</h2>
 
       {isLoading ? (
         <p
