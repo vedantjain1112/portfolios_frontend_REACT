@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../header/Navbar";
 import "./PortfolioMobile.scss";
+import { FaExternalLinkAlt } from "react-icons/fa";
 const baseUrl = "https://server-ti6g.onrender.com";
 
 function ServicesMobile() {
@@ -62,12 +63,12 @@ function ServicesMobile() {
                     <p>{item.description}</p>
                     <Link
                       to={item.link}
-                      className="learnt"
+                      className="learned"
                       style={{
                         cursor: "pointer",
                       }}
                     >
-                      Learn
+                      <FaExternalLinkAlt />
                     </Link>
                   </div>
                 </div>
