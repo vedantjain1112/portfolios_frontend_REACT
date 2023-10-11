@@ -1,4 +1,5 @@
 import "./Contact.scss";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   const curr_user = "jainvedant1211@gmail.com";
@@ -35,10 +36,11 @@ export default function Contact() {
           <div className="email_inner_container">
             <div className={`bg_row row_css_here`}>
               <div className="em_row">
-                <a
+                <Link
                   className="widget-link"
-                  href={`https://mail.google.com/mail/u/${curr_user}/#inbox/${email_id}`}
+                  to={`https://mail.google.com/mail/u/${curr_user}/#inbox/${email_id}`}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <div className="emailsWidget em_mainContainer even-element">
                     <div className="em_row">
@@ -59,7 +61,7 @@ export default function Contact() {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
                 <a
                   className="widget-link"
                   href={`mailto:${curr_user}?subject=${encodeURIComponent(
