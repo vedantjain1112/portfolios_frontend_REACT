@@ -5,6 +5,7 @@ import About from "./components/pages/about/About";
 import ContactHome from "./components/pages/contact/ContactHome";
 import PortfolioHome from "./components/pages/portfolio/PortfolioHome";
 import ServicesHome from "./components/pages/services/ServicesHome";
+import Error from "./Error";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/my-projects" element={<PortfolioHome />} />
         <Route exact path="/my-services" element={<ServicesHome />} />
         <Route exact path="/contact" element={<ContactHome />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
   );
