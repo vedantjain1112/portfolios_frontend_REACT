@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Audiowide&family=Belanosima&family=Bungee+Spice&family=Exo+2&family=Nunito+Sans:wght@200;300;400&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Audiowide&family=Belanosima&family=Bungee+Spice&family=Exo+2&family=Nunito+Sans:wght@200;300;400&family=Roboto&display=swap");
 
 .header {
   position: sticky;
@@ -13,8 +13,6 @@
   margin-top: 5px;
 }
 
-
-
 .links {
   display: flex;
   align-items: center;
@@ -22,8 +20,7 @@
   margin: auto;
 }
 
-
-#navimumbaiimumbai{
+#navimumbaiimumbai {
   display: flex;
   justify-content: space-between;
 }
@@ -52,7 +49,7 @@
   margin-left: 3rem;
   color: #fff;
   font-size: 24px;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   cursor: pointer;
 }
 
@@ -61,7 +58,7 @@
   font-weight: 600;
   font-size: 25px;
   color: red;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   cursor: pointer;
 }
 
@@ -79,7 +76,6 @@
   gap: 60px;
 }
 
-
 #clock {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -89,7 +85,6 @@
   align-items: center;
   gap: 10px;
 }
-
 
 #time {
   display: flex;
@@ -140,13 +135,19 @@
   font-size: 0.8em;
 }
 
-.links li .anchorTAGHUmein:hover{
+.links li .anchorTAGHUmein:hover {
   text-decoration: none;
   color: red;
 }
 
+.redirect a {
+  text-decoration: none;
+  color: #fff;
+}
 
-
+.redirect a:hover {
+  text-decoration: none;
+}
 
 /* Media Queries */
 
@@ -181,7 +182,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color:#353131; 
+    background-color: #353131;
     color: #fff;
   }
 
@@ -218,7 +219,6 @@
     cursor: pointer;
     margin-right: 20px;
   }
-
 }
 
 @media (max-width: 900px) {
@@ -286,7 +286,7 @@
     font-size: 22px;
   }
 
-  #login-btn{
+  #login-btn {
     margin-left: 200px;
   }
 }
@@ -378,7 +378,7 @@
     width: 100%;
   }
 
-  .logoo{
+  .logoo {
     margin-left: 32px;
   }
 
@@ -386,11 +386,9 @@
     font-size: 24px;
   }
 
-  #login-btn{
+  #login-btn {
     margin: 0 auto;
   }
-
-
 }
 
 @media (max-width: 450px) {
@@ -402,8 +400,8 @@
     font-size: 24px;
   }
 
-  .logoo{
-    margin:0;
+  .logoo {
+    margin: 0;
   }
 }
 
@@ -416,22 +414,19 @@
     font-size: 10px;
   }
 
-  #login-btn{
+  #login-btn {
     margin: 0 auto;
   }
 
-  .logoo{
-    margin:0;
+  .logoo {
+    margin: 0;
   }
 
   .logoo h2 {
     font-size: 24px;
   }
-  
-  .onthreesixfiveNone{
+
+  .onthreesixfiveNone {
     display: none;
   }
-
 }
-
-

@@ -23,8 +23,10 @@ function Navbar() {
     <>
       <div className="header" id="home">
         <div className="logoo">
-          <h2>
-            Ved<span style={{ marginLeft: "0" }}>ant</span>
+          <h2 className="redirect">
+            <Link to="/">
+              Ved<span style={{ marginLeft: "0" }}>ant</span>
+            </Link>
           </h2>
         </div>
         <nav className={isNavBarActive ? "active" : ""} id="navimumbai">
