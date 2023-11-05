@@ -60,15 +60,11 @@ function About() {
               alt={aboutData.name}
               className="profile-image"
             />
-            <h1 className="name">
-              <strong>{aboutData.name}</strong>
-            </h1>
+            <h1 className="name">{aboutData.name}</h1>
             <p className="about-paragraph">{aboutData.paragraph}</p>
 
             <div className="skillsKnown">
-              <h2 className="skillsTag">
-                <strong>Skills I'm Acquainted With</strong>
-              </h2>
+              <h2 className="skillsTag">Skills I'm Acquainted With</h2>
             </div>
 
             <div className="skills">

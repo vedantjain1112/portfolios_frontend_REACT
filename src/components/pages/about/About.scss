@@ -1,3 +1,12 @@
+// @import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+
+// @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital@1&display=swap");
+
+// @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+// @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
 .about-container {
   background-color: rgb(30, 27, 27);
@@ -14,10 +23,9 @@
   border: 3px dotted red;
 }
 
-
 .profile-image {
-  width: 200px; 
-  height: 200px; 
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   margin: 20px auto;
   transition: transform 0.3s ease-in-out;
@@ -28,8 +36,10 @@
 }
 
 .name {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
+  letter-spacing: 3px;
+  font-family: "Pacifico", cursive;
 }
 
 .about-paragraph {
@@ -37,6 +47,7 @@
   line-height: 30px;
   letter-spacing: 2px;
   margin: 20px 0;
+  font-family: "Raleway", sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -59,7 +70,6 @@
   }
 }
 
-
 .skill-bars {
   display: flex;
   flex-wrap: wrap;
@@ -68,7 +78,7 @@
 }
 
 .skill-bar {
-  width: calc(50% - 10px); 
+  width: calc(50% - 10px);
   margin-bottom: 10px;
 }
 
@@ -87,14 +97,14 @@
 .bar {
   height: 100%;
   background-color: red;
-  transition: width 1s ease-in-out; 
+  transition: width 1s ease-in-out;
   position: relative;
 }
 
 .bar-fill {
   height: 100%;
   width: 0;
-  background-color: red; 
+  background-color: red;
   position: absolute;
   top: 0;
   left: 0;
@@ -110,12 +120,11 @@
   }
 }
 
-
-.skills{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .skill-bar {
@@ -135,21 +144,20 @@ flex-direction: column;
 }
 
 .progression {
-  background-color:rgb(184, 92, 92);
+  background-color: rgb(184, 92, 92);
   height: 100%;
   text-align: right;
   padding-right: 10px;
   color: #fff;
 }
 
-.skillsKnown{
+.skillsKnown {
   position: relative;
 }
 
-.skillsTag{
+.skillsTag {
   text-align: center;
   color: #fff;
-  margin-block:30px;
+  margin-block: 30px;
+  font-family: "Pacifico", cursive;
 }
-
-

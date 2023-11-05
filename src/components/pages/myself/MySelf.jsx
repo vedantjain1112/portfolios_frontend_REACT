@@ -6,7 +6,7 @@ import Navbar from "../../header/Navbar";
 import {
   faLinkedin,
   faGithub,
-  faTwitter,
+  faSquareXTwitter,
   faInstagram,
   faFacebook,
   faThreads,
@@ -94,14 +94,14 @@ const MySelf = () => {
                   <FontAwesomeIcon icon={faGithub} />
                 </Link>
                 <Link to={mySelfData.icons?.twitter || ""}>
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FontAwesomeIcon icon={faSquareXTwitter} />
                 </Link>
                 <Link to={mySelfData.icons?.threads || ""}>
                   <FontAwesomeIcon icon={faThreads} />
                 </Link>
               </div>
               <Link className="cv-link" to={mySelfData.cvLink || ""} download>
-                Download my CV
+                Download my Resume
               </Link>
             </header>
           </div>
