@@ -40,6 +40,7 @@ function About() {
 
       {isLoading ? (
         <p
+          className="fade-in-up"
           style={{
             textAlign: "center",
             color: "#fff",
@@ -54,7 +55,7 @@ function About() {
         </p>
       ) : (
         <div className="about-container">
-          <div className="about-content">
+          <div className="about-content fade-in-up">
             <img
               src={`${baseUrl}/${aboutData.image}`}
               alt={aboutData.name}
